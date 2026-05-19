@@ -2,16 +2,13 @@
     "name": "@vex-sl/baileys",
     "version": "1.0.0",
     "description": "WhatsApp Modified By VEX-SL",
-    "keywords": [
-        "whatsapp-baileys"
-    ],
+    "keywords": ["whatsapp-baileys"],
     "homepage": "https://github.com/VEX-SL/Baileys",
     "repository": {
         "type": "git",
         "url": "https://github.com/VEX-SL/Baileys"
     },
-    "license": "MIT",
-    "author": "VEX-SL",
+    "author": "VEX",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "files": [
@@ -20,19 +17,9 @@
         "engine-requirements.js"
     ],
     "scripts": {
-        "build:all": "tsc && typedoc",
-        "build:docs": "typedoc",
-        "build:tsc": "tsc",
-        "changelog:last": "conventional-changelog -p angular -r 2",
-        "changelog:preview": "conventional-changelog -p angular -u",
-        "gen:protobuf": "sh WAProto/GenerateStatics.sh",
-        "lint": "eslint src --ext .js,.ts,.jsx,.tsx",
-        "lint:fix": "eslint src --fix --ext .js,.ts,.jsx,.tsx",
         "prepack": "tsc",
         "prepare": "tsc",
-        "preinstall": "node ./engine-requirements.js",
-        "release": "release-it",
-        "test": "jest"
+        "preinstall": "node ./engine-requirements.js"
     },
     "dependencies": {
         "@adiwajshing/keyed-db": "^0.2.4",
@@ -62,20 +49,12 @@
         "sharp": "^0.32.2"
     },
     "peerDependenciesMeta": {
-        "jimp": {
-            "optional": true
-        },
-        "link-preview-js": {
-            "optional": true
-        },
-        "qrcode-terminal": {
-            "optional": true
-        },
-        "sharp": {
-            "optional": true
-        }
+        "jimp": {"optional": true},
+        "link-preview-js": {"optional": true},
+        "qrcode-terminal": {"optional": true},
+        "sharp": {"optional": true}
     },
-    "packageManager": "yarn@1.22.19",
     "engines": {
         "node": ">=20.0.0"
     }
+}
