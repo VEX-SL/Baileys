@@ -1,16 +1,17 @@
 {
-    "name": "VEX/Baileys",
+    "name": "@vex-sl/baileys",
     "version": "1.0.0",
-    "description": "WhatsApp Modified By VEX",
+    "description": "WhatsApp Modified By VEX-SL",
     "keywords": [
         "whatsapp-baileys"
     ],
-    "homepage": "https://github.com/tenka-san/WaBails",
+    "homepage": "https://github.com/VEX-SL/Baileys",
     "repository": {
-        "url": "https://github.com/tenka-san/WaBails"
+        "type": "git",
+        "url": "https://github.com/VEX-SL/Baileys"
     },
     "license": "MIT",
-    "author": "VEX",
+    "author": "VEX-SL",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "files": [
@@ -27,8 +28,8 @@
         "gen:protobuf": "sh WAProto/GenerateStatics.sh",
         "lint": "eslint src --ext .js,.ts,.jsx,.tsx",
         "lint:fix": "eslint src --fix --ext .js,.ts,.jsx,.tsx",
-        "prepack": "",
-        "prepare": "",
+        "prepack": "tsc",
+        "prepare": "tsc",
         "preinstall": "node ./engine-requirements.js",
         "release": "release-it",
         "test": "jest"
@@ -78,4 +79,3 @@
     "engines": {
         "node": ">=20.0.0"
     }
-}
